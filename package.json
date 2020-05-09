@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --verbose"
+    "test": "jest --verbose --coverage"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,8 @@
     "winston-mongodb": "^5.0.1"
   },
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "supertest": "^4.0.2"
   },
   "jest": {
     "testEnvironment": "node"
