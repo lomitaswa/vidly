@@ -8,8 +8,8 @@ let server;
 describe('/api/genres', () => {
   beforeEach(() => { server = require('../../index'); })
   afterEach(async () => { 
+    await Genre.deleteMany({});
     await server.close(); 
-    await Genre.remove({});
   });
 
   describe('GET /', () => {
@@ -182,7 +182,7 @@ describe('/api/genres', () => {
     it('should update the genre if input is valid', async () => {
       await exec();
 
-      const updatedGenre = await Genre.findByIdAndUpdate(genre._id);
+      const updatedGenre = await Genre.findById(genre._id);
 
       expect(updatedGenre.name).toBe(newName);
     });
@@ -252,7 +252,7 @@ describe('/api/genres', () => {
     it('should delete the genre if input is valid', async () => {
       await exec();
 
-      const genreInDb = await Genre.findByIdAndRemove(id);
+      const genreInDb = await Genre.findById(id);
 
       expect(genreInDb).toBeNull();
     });
