@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=production&& node index.js"
+    "start": "node index.js"
   },
   "engines": {
     "node": "v13.5.0"
