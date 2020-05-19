@@ -5,10 +5,12 @@ Back-end is powered by Node.js and Express.js.
 MongoDB is the database.
 
 
-  ... bash
-  > Install dependencies
+
+  # Install dependencies
+  ...bash
   $ npm install
-  
-  > Run the web app
-  $ npm start
   ...
+  # Run the web app
+  ...bash
+  $ npm start
+ ...
