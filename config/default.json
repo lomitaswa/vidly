@@ -1,4 +1,6 @@
 {
-    "jwtPrivateKey": "",
-    "db": "mongodb://localhost/vidly_test"
+  "jwtPrivateKey": "",
+  "db": "mongodb://localhost/vidly_test",
+  "host": "localhost",
+  "port": 5984
 }
